@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.pokedex {
+  width: 450px;
+  height: 750px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #D40A2F;
+}
+
+.nav-wrap {
+  width: 100%;
+  -webkit-filter: drop-shadow(-1px 6px 3px #75000F);
+          filter: drop-shadow(-1px 6px 3px #75000F);
+}
+
+.nav {
+  width: 100%;
+  height: 80px;
+  background: #D40A2F;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 58% 88%, 42% 100%, 0 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 58% 88%, 42% 100%, 0 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .nav-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px;
+}
+
+.nav .nav-buttons .main-btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #00D7FC;
+}
+
+.nav .nav-buttons .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav .nav-buttons .btn-container .btn-nav {
+  margin: 2px;
+}
+
+.nav .nav-buttons .btn-container .btn1 {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #940303;
+}
+
+.nav .nav-buttons .btn-container .btn2 {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: yellow;
+}
+
+.nav .nav-buttons .btn-container .btn3 {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.screen {
+  width: 80%;
+  height: 50%;
+  background: #D8D6D7;
+  padding: 2em;
+  -webkit-clip-path: polygon(100% 0%, 100% 59%, 100% 100%, 11% 99%, 0 89%, 0 0);
+          clip-path: polygon(100% 0%, 100% 59%, 100% 100%, 11% 99%, 0 89%, 0 0);
+}
+
+.screen .display {
+  width: 100%;
+  height: 100%;
+  background: #00D7FC;
+}
+
+.screen .display #pokemon-data {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.screen .display #pokemon-data img {
+  height: 250px;
+  width: 250px;
+}
+
+.screen .display #pokemon-data span {
+  font-size: 2em;
+  color: white;
+}
+
+.controls {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.controls .left {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  height: 100%;
+  width: 50%;
+}
+
+.controls .left .control-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.controls .left .control-buttons .large-btn {
+  width: 30px;
+  height: 8px;
+  border-radius: 10%;
+  margin: 5px;
+}
+
+.controls .left .control-buttons .control-btn1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #00AAF6;
+}
+
+.controls .left .control-buttons .control-btn2 {
+  background: #2EF453;
+}
+
+.controls .left .control-buttons .control-btn3 {
+  background: #F98F56;
+}
+
+.controls .left .number-display {
+  width: 75px;
+  height: 40px;
+  margin-left: 30px;
+  background: #56A85D;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.controls .left .number-display span {
+  font-size: 1.5em;
+  color: white;
+}
+
+.controls .right {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  height: 100%;
+  width: 50%;
+}
+
+.controls .right .vertical {
+  width: 50px;
+  height: 12px;
+  background-color: #2D2D2D;
+}
+
+.controls .right .horizontal {
+  width: 50px;
+  height: 12px;
+  background-color: #2D2D2D;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin: -12px 0 0 0;
+}
+/*# sourceMappingURL=main.css.map */
