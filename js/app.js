@@ -24,7 +24,14 @@ const fetchData = async (id) => {
 const pintarPokemon = (pokemon) => {
     const display = document.querySelector('.display');
     const template = document.querySelector('#pokemon-data');
-    
+
+    if(pokemon.types.length == 2) {
+        template.querySelector('#class1').setAttribute('src', `./img/icons/${pokemon.types[0].type.name}.svg`)
+        template.querySelector('#class2').setAttribute('src', `./img/icons/${pokemon.types[1].type.name}.svg`)
+    } else {
+        template.querySelector('#class1').setAttribute('src', `./img/icons/${pokemon.types[0].type.name}.svg`)
+        template.querySelector('#class2').classList.add('disabled');
+    }
     template.querySelector('.poke-img').setAttribute('src', pokemon.sprites.other.dream_world.front_default );
     template.querySelector('.poke-name').textContent = pokemon.species.name;
 

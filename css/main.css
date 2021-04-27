@@ -131,11 +131,30 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 1em;
+}
+
+.screen .display #pokemon-data .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .screen .display #pokemon-data img {
   height: 250px;
   width: 250px;
+}
+
+.screen .display #pokemon-data .poke-class {
+  width: 30px;
+  height: 30px;
+}
+
+.screen .display #pokemon-data .disabled {
+  display: none;
 }
 
 .screen .display #pokemon-data span {

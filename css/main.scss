@@ -97,10 +97,25 @@ main {
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
+            padding: 1em;
+
+            .top {
+                display: flex;
+                align-items: center;
+            }
 
             img {
                 height: 250px;
                 width: 250px;
+            }
+
+            .poke-class {
+                width: 30px;
+                height: 30px;
+            }
+
+            .disabled {
+                display: none;
             }
 
             span {
